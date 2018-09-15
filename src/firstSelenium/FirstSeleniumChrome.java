@@ -17,13 +17,10 @@ import libs.Input;
 public class FirstSeleniumChrome {
 
     public static void main(String[] args) {
-    	//System.setProperty("webdriver.gecko.driver", "C:\test_automation\drivers\geckodriver.exe");
+    	//System.setProperty("webdriver.gecko.driver", "C:\\test_automation\\drivers\\geckodriver.exe");
+    	System.setProperty("webdriver.chrome.driver", "/Users/angelaguarin/test_automation/drivers/chromedriver");
     	
-    	String chromeProfile = "/Users/jnavarro/Library/Application Support/Google/Chrome/automationGuy";
-    	ChromeOptions opts = new ChromeOptions();
-    	opts.addArguments("--disable-notifications");
-    	opts.addArguments("--start-maximized");
-        WebDriver driver = new ChromeDriver(opts);
+        WebDriver driver = new ChromeDriver();
         
         
         String expectedTitle = "Welcome: Mercury Tours";
